@@ -5,12 +5,12 @@
 // license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
 
-import 'package:familiaquotes/features/quote/presentation/pages/quote_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'package:familiaquotes/l10n/l10n.dart';
 
+import 'presentation/pages/quote/quote_screen.dart';
 import 'presentation/widget/quote_widget.dart';
 
 class App extends StatelessWidget {

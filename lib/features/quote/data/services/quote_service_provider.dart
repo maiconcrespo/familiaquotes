@@ -4,7 +4,7 @@ import 'package:familiaquotes/features/quote/domain/entities/random_verse_model.
 
 import '../datasources/local.dart';
 
-class QuoteServiceProvider extends Interceptor {
+class QuoteServiceProvider {
   QuoteServiceProvider() {
     //initializeInterceptors();
 
@@ -20,9 +20,6 @@ class QuoteServiceProvider extends Interceptor {
     try {
       Response response = await _dio.get(urlRest);
       return RandomVerse.fromJson(response.data);
-
-      // final resultList = response.data['book'];
-
     } on DioError catch (e) {
       print(e.message);
       throw Exception(e.message);

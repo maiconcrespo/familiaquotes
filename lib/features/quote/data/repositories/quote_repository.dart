@@ -4,7 +4,7 @@ import 'package:familiaquotes/features/quote/domain/entities/random_verse_model.
 class QuoteRepository {
   final QuoteServiceProvider _serviceProvider = QuoteServiceProvider();
 
-  Future<RandomVerse> getQuote() {
+  Future<RandomVerse> getQuotes() {
     return _serviceProvider.getRequest();
   }
 }
